@@ -1,15 +1,12 @@
 import "../components/HomePageStyle.scss"
-import ReactPlayer from "react-player";
-import videoBackground from "../assets/tarantino-video.mp4";
+import backgroundVideo from "../assets/tarantino-video.mp4";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'Home', href: '/HomePage', current: true },
+    { name: 'Movies', href: '/Movies', current: false },
   ]
 
   function classNames(...classes) {
@@ -19,17 +16,12 @@ const navigation = [
 function HomePage() {
   return (
     <div className="home-page">
-        <div>
-          <ReactPlayer
-          className="video-background"
-            url={videoBackground}
-            playing={true}
-            loop={true}
-            muted={true}
-            height="100%"
-          />
+        <div className="video-background">
+        <video autoPlay loop muted className="video-background">
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
         </div>
-      <h1>coucou</h1>
       <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
@@ -50,8 +42,8 @@ function HomePage() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
+                    src="https://zupimages.net/up/23/29/p8xy.png"
+                    alt="Logo of website"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
