@@ -24,7 +24,7 @@ const Navbar = () => {
   <input type='checkbox' id='responsive-menu' onClick={updatemenu} /><label></label>
   <ul>
     <li><a href='/'>Home</a></li>
-    <li><a className='dropdown-arrow' href='http://'>Movies</a>
+    <li><a className='dropdown-arrow' href='/movies'>Movies</a>
       <ul className='sub-menus'>
         <div className="addmovie">
         </div>
