@@ -55,5 +55,7 @@ body{
   transform: translate(-50%, -50%);
   z-index: 1;
   font-size: 5rem;
-  color: red;
+  text-shadow: 7px -3px 0px #0a0a0a;
+  color: $color-yellow;
+  text-align: center;
 }
