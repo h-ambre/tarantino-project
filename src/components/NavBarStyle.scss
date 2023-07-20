@@ -1,165 +1,203 @@
 @import "../assets/variable.scss";
 
 #menu {
-	background: linear-gradient(90deg, #e0a425 0%, hwb(40 18% 81%) 100%);;
-	color: $color-white;
-	height: 65px;
-    display: flex;
-    align-items: center;
+  background: linear-gradient(90deg, #e0a425 0%, hwb(40 18% 81%) 100%);
+  color: $color-black;
+  height: 65px;
+  display: flex;
+  align-items: center;
 }
-#menu ul, #menu li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+#menu ul,
+#menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #menu li {
-	float: left;
-	display: inline;
-	position: relative;
+  float: left;
+  display: inline;
+  position: relative;
 }
 #menu a {
-	display: block;
-	line-height: 45px;
-	padding: 0 19px;
-	text-decoration: none;
-	color: $color-white;
-	font-size: 18px;
+  display: block;
+  line-height: 45px;
+  padding: 0 19px;
+  text-decoration: none;
+  color: $color-black;
+  font-size: 18px;
 }
 // defilement onglet movies
 #menu a.dropdown-arrow:after {
-	content: "\25BE";
-	margin-left: 5px;
+  content: "\25BE";
+  margin-left: 5px;
 }
 #menu li a:hover {
-	color: $color-yellow;
-	background: #F2F2F2;
+  color: $color-yellow;
+  background: $color-black;
 }
 //affichage defilement onglet movies
-#menu ul.sub-menus a:hover{
-	background: #F2F2F2;
-	color: $color-yellow;
+#menu ul.sub-menus a:hover {
+  background: $color-black;
+  color: $color-yellow;
 }
 
 // responsive
 #menu input {
-	display: none;
-	margin: 0;
-	padding: 0;
-	height: 45px;
-	width: 100%;
-	opacity: 0;
-	cursor: pointer 
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 #menu label {
-	display: none;
-	line-height: 45px;
-	text-align: center;
-	position: absolute;
-	right: 35px
+  display: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  right: 35px;
 }
 #menu label:before {
-	font-size: 1.6em;
-	content: "\2261"; 
-	margin-right: 20px;
+  font-size: 1.6em;
+  content: "\2261";
+  margin-right: 20px;
 }
-#menu ul.sub-menus{
-	height: auto;
-	overflow: hidden;
-	width: 180px;
-	background: $color-yellow;
-	position: absolute;
-	z-index: 99;
-	display: none;
+#menu ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 180px;
+  background: $color-yellow;
+  position: absolute;
+  z-index: 99;
+  display: none;
 }
 #menu ul.sub-menus li {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 #menu ul.sub-menus a {
-	color: #FFFFFF;
-	font-size: 16px;
+  color: $color-black;
+  font-size: 16px;
 }
 #menu li:hover ul.sub-menus {
-	display: block;
+  display: block;
 }
 
-@media screen and (max-width: 800px){
-	#menu {position:relative}
-	#menu ul {background:#111;position:absolute;top:100%;right:0;right:0;z-index:3;height:auto;display:none}
-	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-right:30px;}
-	#menu li {display:block;float:none;width:auto;}
-	#menu input, #menu label {position:absolute;top:0;right:0;display:block}
-	#menu input {z-index:4}
-	#menu input:checked + label {color:white}
-	#menu input:checked + label:before {content:"\00d7"}
-	#menu input:checked ~ ul {display:block}
+@media screen and (max-width: 800px) {
+  #menu {
+    position: relative;
+  }
+  #menu ul {
+    background: $color-black;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    right: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+  }
+  #menu ul.sub-menus {
+    width: 100%;
+    position: static;
+  }
+  #menu ul.sub-menus a {
+    padding-right: 30px;
+  }
+  #menu li {
+    display: block;
+    float: none;
+    width: auto;
+  }
+  #menu input,
+  #menu label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+  #menu input {
+    z-index: 4;
+  }
+  #menu input:checked + label {
+    color: $color-black;
+  }
+  #menu input:checked + label:before {
+    content: "\00d7";
+  }
+  #menu input:checked ~ ul {
+    display: block;
+  }
 }
-
-
 
 .button {
-	position: relative;
-	width: 150px;
-	height: 40px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	border: 1px solid $color-white;
-	background-color: $color-white;
-	margin-left: 900px;
-  }
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid $color-black;
+  background-color: $color-black;
+  margin-left: 900px;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.5s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  font-weight: 600;
+  margin-left: -12%;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: $color-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  height: 45px;
+  width: 30px;
+  stroke: $color-yellow;
   
-  .button, .button__icon, .button__text {
-	transition: all 0.5s;
-  }
-  
-  .button .button__text {
-	transform: translateX(30px);
-	color: #fff;
-	font-weight: 600;
-	margin-left: -12%;
-  }
-  
-  .button .button__icon {
-	position: absolute;
-	transform: translateX(109px);
-	height: 100%;
-	width: 39px;
-	background-color: $color-white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }
-  
-  .button .svg {	height: 45px;
-	width: 30px;
-	stroke: $color-yellow;
-  }
-  
-  .button:hover {
-	background: $color-yellow;
-  }
-  
-  .button:hover .button__text {
-	color: transparent;
-  }
-  
-  .button:hover .button__icon {
-	width: 148px;
-	transform: translateX(0);
-  }
-  
-  .button:active .button__icon {
-	background-color: black;
-  }
-  
-  .button:active {
-	border: 1px solid $color-white;
-  }
+}
+
+.button:hover {
+  background: $color-yellow;
+}
+
+.button:hover .button__text {
+  color: transparent;
+  background-color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: $color-black;
+}
+
+.button:active {
+  border: 1px solid $color-black;
+}
 
 .logo {
-	margin-left: 10px;
-	height: 100%;
-  }
+  margin-left: 10px;
+  height: 100%;
+  margin-top: 2px;
+}

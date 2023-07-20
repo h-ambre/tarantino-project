@@ -1,5 +1,5 @@
 import "./NavBarStyle.scss"
-import logo from "../assets/LOGO.png";
+import logo from "../assets/LOGO2.png";
 
 function updatemenu() {
   if (document.getElementById('responsive-menu').checked === true) {

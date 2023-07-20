@@ -3,34 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-// // .home-page nav {
-// //   background-color: $color-white; /* Remplace par le code couleur du rose fluo que tu souhaites utiliser */
-// // }
-
-
-// .video-background {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//     z-index: -1;
-//     overflow: hidden;
-//   }
-
-//   .title-name-project{
-//     background-color: blue;
-//     display: flex;
-//     text-align: center;
-//     justify-content: center;
-//     font-size: 90px;
-//     align-items: center;
-//     margin-left: 30%;
-//     margin-right: 30%;
-//   }
-  
-
 /* HomePageStyle.scss */
 body{
     overflow: hidden;
@@ -50,8 +22,8 @@ body{
 
 .title-name-project {
   position: absolute;
-  top: 20%;
-  left: 25%;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   font-size: 6rem;
@@ -62,11 +34,11 @@ body{
 
 .description-project{
   position: absolute;
-  top: 45%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  font-size: 2rem;
+  font-size: 1rem;
   text-shadow: 3px -1px 0px #0a0a0a;
   color: $color-yellow;
   text-align: center;
@@ -74,34 +46,32 @@ body{
 
 
 .button-movie {
-  background: #A370F0;
-  color: white;
-  font-family: inherit;
+  background: $color-yellow;
+  color: $color-black;
   padding: 0.35em;
   padding-left: 1.2em;
   font-size: 17px;
   font-weight: 500;
-  border-radius: 0.9em;
+  border-radius: 0.6em;
   border: none;
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  box-shadow: inset 0 0 1.6em -0.6em $color-black;
   overflow: hidden;
   position: relative;
   height: 2.8em;
   padding-right: 3.3em;
   position: absolute;
-  top: 45%;
+  bottom: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   font-size: 2rem;
-  background-color: red;
 }
 
 .button-movie .button-icon {
-  background: white;
+  background: $color-black;
   margin-left: 1em;
   position: absolute;
   display: flex;
@@ -109,8 +79,8 @@ body{
   justify-content: center;
   height: 2.2em;
   width: 2.2em;
-  border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em $color-black;
   right: 0.3em;
   transition: all 0.5s;
 }
