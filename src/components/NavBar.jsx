@@ -17,13 +17,13 @@ const Navbar = () => {
     <img
       className="logo"
       src={logo}
-      alt="HomePage"
+      alt="Logo Website"
       onClick={() => window.location.href = "/"} 
       style={{ cursor: 'pointer' }}
     />
   <input type='checkbox' id='responsive-menu' onClick={updatemenu} /><label></label>
   <ul>
-    <li><a href='http://'>Home</a></li>
+    <li><a href='/'>Home</a></li>
     <li><a className='dropdown-arrow' href='http://'>Movies</a>
       <ul className='sub-menus'>
         <div className="addmovie">
