@@ -1,14 +1,14 @@
 @import "../assets/variable.scss";
 
 #menu {
-	background: #e0a425;
+	background: linear-gradient(90deg, #e0a425 0%, hwb(40 18% 81%) 100%);;
 	color: $color-white;
 	height: 65px;
     display: flex;
     align-items: center;
 }
 #menu ul, #menu li {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	list-style: none;
 }
@@ -108,7 +108,7 @@
 	align-items: center;
 	border: 1px solid $color-white;
 	background-color: $color-white;
-	margin-left: 150%;
+	margin-left: 900px;
   }
   
   .button, .button__icon, .button__text {
@@ -133,7 +133,7 @@
 	justify-content: center;
   }
   
-  .button .svg {
+  .button .svg {	height: 45px;
 	width: 30px;
 	stroke: $color-yellow;
   }
@@ -160,15 +160,6 @@
   }
 
 .logo {
-	margin-right: 20px;
+	margin-left: 10px;
 	height: 100%;
   }
-
-  #menu {
-	background: #e0a425;
-	color: $color-white;
-	height: 65px;
-	display: flex;
-	align-items: center;
-  }
-  
