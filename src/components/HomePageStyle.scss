@@ -15,7 +15,7 @@ body{
 padding: 0;
 }
 
-.title-name-project {
+.title-name-project{
   position: absolute;
   top: 20%;
   left: 50%;
@@ -25,6 +25,12 @@ padding: 0;
   text-shadow: 7px -3px 0px #0a0a0a;
   color: $color-yellow;
   text-align: center;
+}
+
+.title-name-project a{
+  text-decoration: none;
+  color: $color-yellow;
+  text-shadow: 7px -3px 0px #0a0a0a;
 }
 
 .description-project{
@@ -78,6 +84,7 @@ padding: 0;
   box-shadow: 0.1em 0.1em 0.6em 0.2em $color-black;
   right: 0.3em;
   transition: all 0.5s;
+  top: 10%;
 }
 
 .button-movie:hover .button-icon {
