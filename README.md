@@ -6,13 +6,13 @@
 <p align="center"> The website aims to bring together all the movies directed by Quentin Tarantino, along with interesting anecdotes and film summaries. Additionally, users have the ability to contribute by adding information about upcoming movies or any missing ones. The site also offers the functionality to view the movies on streaming platforms where they are available.</p>
 <h1 align="center">Technologies Used</h1>
 <p align="center">HTML </br>
-SCSS</br>
+CSS/SCSS</br>
 JavaScript</br>
 Vite</br>
 React</br>
-MySQL (database)</br>
-Canva (for logo design and models)</br>
-Figma (for wireframes)</p>
+MySQL Workbench(database)</br>
+Canva (logo design and models)</br>
+Figma (wireframes)</p>
 
 <h1 align="center">Features</h1>
 <p align="center">Browse a collection of Quentin Tarantino's movies.
