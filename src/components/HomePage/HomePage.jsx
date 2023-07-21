@@ -1,6 +1,6 @@
-import "../components/HomePageStyle.scss";
-import backgroundVideo from "../assets/tarantino-video.mp4";
-import NavBar from "./NavBar";
+import "../../components/HomePage/HomePageStyle.scss";
+import backgroundVideo from "../../assets/tarantino-video.mp4";
+import NavBar from "../NavBar/NavBar";
 
 function HomePage() {
   return (
